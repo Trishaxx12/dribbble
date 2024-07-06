@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dribbble Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+        color: white;
+    }
+    
+    .logo {
+        font-size: 1.5em;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .auth-buttons button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .auth-buttons button:first-child {
+        background-color: pink;
+        color: white;
+    }
+    
+    .auth-buttons button:last-child {
+        background-color: white;
+        color: pink;
+    }
+    
+    .header-bar {
+        text-align: center;
+        padding: 20px;
+        background-color: #f8f8f8;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .header-bar h1 {
+        margin: 0;
+        font-size: 2em;
+    }
+    
+    .header-bar p {
+        margin: 10px 0;
+    }
+    
+    .header-bar button {
+        background-color: pink;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+        padding: 20px;
+    }
+    
+    .grid-item {
+        position: relative;
+    }
+    
+    .grid-item img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .overlay {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    
+</style>
+<body>
+    <header>
+        <div class="logo">Dribbble</div>
+        <nav>
+            <ul>
+                <li><a href="#">Shots</a></li>
+                <li><a href="#">Designers</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Jobs</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button>Sign up</button>
+            <button>Sign in</button>
+        </div>
+    </header>
+    <main>
+        <div class="header-bar">
+            <h1>What are you working on?</h1>
+            <p>Dribbble is show and tell for designers.</p>
+            <button>Learn more</button>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item"><img src="1dd.png" alt="Famous"><div class="overlay">Famous</div></div>
+            <div class="grid-item"><img src="2d.png" alt="Balkan Brothers"><div class="overlay">Balkan Brothers</div></div>
+            <div class="grid-item"><img src="3d.png" alt="Jan Losert"><div class="overlay">Jan Losert</div></div>
+            <div class="grid-item"><img src="4d.png" alt="Mattias Johansson"><div class="overlay">Mattias Johansson</div></div>
+            <div class="grid-item"><img src="5d.png" alt="Ruslan Siiz"><div class="overlay">Ruslan Siiz</div></div>
+            <div class="grid-item"><img src="6d.png" alt="Paperpillar"><div class="overlay">Paperpillar</div></div>
+            <div class="grid-item"><img src="7d.png" alt="Alfrey Davilla"><div class="overlay">Alfrey Davilla</div></div>
+            <div class="grid-item"><img src="8d.png" alt="Studio-JQ"><div class="overlay">Studio-JQ</div></div>
+            <div class="grid-item"><img src="9d.png" alt="Romain Trystram"><div class="overlay">Romain Trystram</div></div>
+            <div class="grid-item"><img src="10d.png" alt="FourPlus Studio"><div class="overlay">FourPlus Studio</div></div>
+            <div class="grid-item"><img src="11d.png" alt="MUTI"><div class="overlay">MUTI</div></div>
+        </div>
+    </main>
+</body>
+</html>
